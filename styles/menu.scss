@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: #333333;
+  color: #fff;
+}
+
+.header {
+  composes: header from './header.scss';
+}
+
+.title {
+  composes: title from './header.scss';
+}
+
+.openButton {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+  padding: 0;
+  background: #333333;
+  border: 0;
+  color: #fff;
+  font-size: 1.3em;
+
+  > span {
+    margin: 16px;
+  }
+}
+
+.closeButton {
+  composes: openButton;
+  background: #fff;
+  color: #333333;
+}
+
+.menuItems {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/**
+ * Animations
+ */
+
+@keyframes menuEnterExit {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menuItemsEnter {
+  from {
+    margin-top: 50%;
+    height: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 20px;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+.menuEnter {
+  animation-name: menuEnterExit;
+  animation-duration: 0.5s;
+}
+
+.menuLeave {
+  animation-name: menuEnterExit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.menuItemAppear {
+  animation-name: menuItemsEnter;
+  animation-duration: 0.5s;
+}
