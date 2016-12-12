@@ -5,7 +5,7 @@
 
 .menu {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -64,16 +64,14 @@
   }
 }
 
-@keyframes menuItemsEnter {
+@keyframes menuItemAppear {
   from {
-    margin-top: 50%;
-    height: 300%;
+    transform: translateY(100%);
     opacity: 0;
   }
 
   to {
-    margin-top: 20px;
-    height: 100%;
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -87,9 +85,10 @@
   animation-name: menuEnterExit;
   animation-duration: 0.5s;
   animation-direction: reverse;
+  animation-fill-mode: forwards;
 }
 
 .menuItemAppear {
-  animation-name: menuItemsEnter;
+  animation-name: menuItemAppear;
   animation-duration: 0.5s;
 }
