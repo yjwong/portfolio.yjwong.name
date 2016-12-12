@@ -29,6 +29,9 @@ module.exports = {
     }, {
       test: /\.(eot|png|svg|ttf|woff|woff2)$/,
       loaders: ['url?limit=10240']
+    }, {
+      test: /\.json$/,
+      loaders: ['json']
     }]
   },
   devtool: 'eval',

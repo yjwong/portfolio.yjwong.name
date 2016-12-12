@@ -11,10 +11,6 @@
   "type": "code",
   "synopsis": "A proxy that allows Steam In-Home Steaming to work across subnets."
 }, {
-  "id": "p4node",
-  "type": "code",
-  "synopsis": "Perforce bindings for Node.js."
-}, {
   "id": "node-podofo",
   "type": "code",
   "synopsis": "PoDoFo (PDF library) bindings for Node.js."
@@ -22,6 +18,10 @@
   "id": "node-sane",
   "type": "code",
   "synopsis": "SANE (Scanner Access Now Easy) bindings for Node.js."
+}, {
+  "id": "3dgol",
+  "type": "code",
+  "synopsis": "3D Game of Life implementation in CUDA."
 }, {
   "id": "comp-club",
   "type": "design",
