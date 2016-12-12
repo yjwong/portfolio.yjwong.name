@@ -1,0 +1,69 @@
+[{
+  "id": "etc-festival-queue",
+  "type": "code",
+  "synopsis": "A simple queuing system using Twilio."
+}, {
+  "id": "nodejs-portable-runtime",
+  "type": "code",
+  "synopsis": "A set of scripts that allow running Node.js portably."
+}, {
+  "id": "steam-udp-forwarder",
+  "type": "code",
+  "synopsis": "A proxy that allows Steam In-Home Steaming to work across subnets."
+}, {
+  "id": "p4node",
+  "type": "code",
+  "synopsis": "Perforce bindings for Node.js."
+}, {
+  "id": "node-podofo",
+  "type": "code",
+  "synopsis": "PoDoFo (PDF library) bindings for Node.js."
+}, {
+  "id": "node-sane",
+  "type": "code",
+  "synopsis": "SANE (Scanner Access Now Easy) bindings for Node.js."
+}, {
+  "id": "comp-club",
+  "type": "design",
+  "synopsis": "Web design for NUS Students' Computing Club."
+}, {
+  "id": "mock-pitch-hololisten",
+  "type": "design",
+  "synopsis": "Slide deck design for mock pitch presentation at CMU ETC."
+}, {
+  "id": "athena-faculty-committee",
+  "type": "design",
+  "synopsis": "Web design for Athena Faculty Committee."
+}, {
+  "id": "glints",
+  "type": "design",
+  "synopsis": "Design work done at Glints, a Series-A funded startup."
+}, {
+  "id": "black-friday",
+  "type": "game",
+  "synopsis": "A crazy multiplayer zombie supermarket game for the HTC Vive."
+}, {
+  "id": "keyboard-vs-mouse",
+  "type": "game",
+  "synopsis": "A two-player game pitting the keyboard against the mouse."
+}, {
+  "id": "cat-and-mouse",
+  "type": "game",
+  "synopsis": "A four-player game for the Jam-O-Drum platform."
+}, {
+  "id": "missed-connection",
+  "type": "film",
+  "synopsis": "A short 360 degree film of unexpected romance at the library."
+}, {
+  "id": "the-chain",
+  "type": "film",
+  "synopsis": "A music video for Ingrid Michaelson's The Chain."
+}, {
+  "id": "recycled-laptop",
+  "type": "other",
+  "synopsis": "How I converted my laptop into a home theatre PC."
+}, {
+  "id": "roregister",
+  "type": "other",
+  "synopsis": "One of my earliest projects: A control panel for Ragnarok Online private servers."
+}]

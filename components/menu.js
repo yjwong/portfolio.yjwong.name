@@ -39,12 +39,13 @@ class Menu extends Component {
                 transitionLeave={false}
                 transitionAppear={true}
                 transitionAppearTimeout={500}>
-                <h2>About</h2>
-                <h2>Code</h2>
-                <h2>Design</h2>
-                <h2>Games</h2>
-                <h2>Film</h2>
-                <h2>Others</h2>
+                <h2 key="about">About</h2>
+                <h2 key="code">Code</h2>
+                <h2 key="design">Design</h2>
+                <h2 key="games">Games</h2>
+                <h2 key="film">Film</h2>
+                <h2 key="others">Others</h2>
+                <h2 key="contact">Contact</h2>
               </ReactCSSTransitionGroup>
             </div>
           </div>

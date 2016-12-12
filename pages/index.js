@@ -9,6 +9,7 @@ class IndexPage extends Component {
     return (
       <div className="container" styleName="container">
         <Header></Header>
+        {this.props.children}
       </div>
     );
   }
