@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import CSSModules from 'react-css-modules';
 import ReactMarkdown from 'react-markdown';
 import axios from 'axios';
+
+import projects from '../public/projects.json';
+import styles from '../styles/project.scss';
 
 class ProjectPage extends Component {
   constructor(props) {
@@ -9,9 +13,18 @@ class ProjectPage extends Component {
   }
 
   async componentWillMount() {
-    const project = await axios.get(`projects/${this.props.params.type}/${this.props.params.id}.md`);
+    const project = projects.find(project =>
+      project.id === this.props.params.id &&
+      project.type === this.props.params.type
+    );
+
+    // Get project description.
+    const response = await axios.get(`projects/${this.props.params.type}/${this.props.params.id}.md`);
+    project.description = response.data;
+
+    // Set the project information.
     this.setState(Object.assign({}, this.state, {
-      project: project.data
+      project: project
     }));
   }
 
@@ -19,9 +32,17 @@ class ProjectPage extends Component {
     if (!this.state.project) {
       return null;
     } else {
-      return <ReactMarkdown source={this.state.project} />
+      return (
+        <div styleName="container">
+          <div styleName="masthead">
+            <h1>{this.state.project.title}</h1>
+            <h3 styleName="subtitle">{this.state.project.synopsis}</h3>
+          </div>
+          <ReactMarkdown source={this.state.project.description} />
+        </div>
+      );
     }
   }
 }
 
-export default ProjectPage;
+export default CSSModules(ProjectPage, styles);
