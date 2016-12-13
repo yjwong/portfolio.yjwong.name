@@ -27,15 +27,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 10px;
+  margin: 0;
   padding: 0;
   background: #333333;
   border: 0;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1em;
 
   > span {
-    margin: 16px;
+    margin: 12px;
   }
 }
 
@@ -46,8 +46,33 @@
 }
 
 .menuItems {
-  text-align: center;
   margin: 24px 0;
+
+  a:link, a:active, a:visited {
+    color: #fff;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/**
+ * Screen specific
+ */
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@media (min-width: $screen-md-min) {
+  .menuItems {
+    text-align: center;
+  }
 }
 
 /**

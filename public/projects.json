@@ -1,69 +1,86 @@
 [{
   "id": "etc-festival-queue",
   "type": "code",
+  "title": "ETC Festival Queuing System",
   "synopsis": "A simple queuing system using Twilio."
 }, {
   "id": "nodejs-portable-runtime",
   "type": "code",
+  "title": "Node.js Portable Runtime",
   "synopsis": "A set of scripts that allow running Node.js portably."
 }, {
   "id": "steam-udp-forwarder",
   "type": "code",
+  "title": "Steam UDP Forwarder",
   "synopsis": "A proxy that allows Steam In-Home Steaming to work across subnets."
 }, {
   "id": "node-podofo",
   "type": "code",
+  "title": "PDF library for Node.js",
   "synopsis": "PoDoFo (PDF library) bindings for Node.js."
 }, {
   "id": "node-sane",
   "type": "code",
+  "title": "Scanner library for Node.js",
   "synopsis": "SANE (Scanner Access Now Easy) bindings for Node.js."
 }, {
   "id": "3dgol",
   "type": "code",
+  "title": "3D Game of Life",
   "synopsis": "3D Game of Life implementation in CUDA."
 }, {
   "id": "comp-club",
   "type": "design",
+  "title": "NUS Students' Computing Club",
   "synopsis": "Web design for NUS Students' Computing Club."
 }, {
   "id": "mock-pitch-hololisten",
   "type": "design",
+  "title": "HoloListen Pitch Deck",
   "synopsis": "Slide deck design for mock pitch presentation at CMU ETC."
 }, {
   "id": "athena-faculty-committee",
   "type": "design",
+  "title": "Athena Faculty Committee",
   "synopsis": "Web design for Athena Faculty Committee."
 }, {
   "id": "glints",
   "type": "design",
+  "title": "Glints",
   "synopsis": "Design work done at Glints, a Series-A funded startup."
 }, {
   "id": "black-friday",
   "type": "game",
+  "title": "Black Friday",
   "synopsis": "A crazy multiplayer zombie supermarket game for the HTC Vive."
 }, {
   "id": "keyboard-vs-mouse",
   "type": "game",
+  "title": "Keyboard vs Mouse",
   "synopsis": "A two-player game pitting the keyboard against the mouse."
 }, {
   "id": "cat-and-mouse",
   "type": "game",
+  "title": "Cat and Mouse",
   "synopsis": "A four-player game for the Jam-O-Drum platform."
 }, {
   "id": "missed-connection",
   "type": "film",
+  "title": "Missed Connection",
   "synopsis": "A short 360 degree film of unexpected romance at the library."
 }, {
   "id": "the-chain",
   "type": "film",
+  "title": "The Chain",
   "synopsis": "A music video for Ingrid Michaelson's The Chain."
 }, {
   "id": "recycled-laptop",
   "type": "other",
+  "title": "Recycled Laptop Project",
   "synopsis": "How I converted my laptop into a home theatre PC."
 }, {
   "id": "roregister",
   "type": "other",
+  "title": "RORegister",
   "synopsis": "One of my earliest projects: A control panel for Ragnarok Online private servers."
 }]
