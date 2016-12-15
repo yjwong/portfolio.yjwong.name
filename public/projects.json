@@ -59,27 +59,67 @@
   "id": "athena-faculty-committee",
   "type": "design",
   "title": "Athena Faculty Committee",
-  "synopsis": "Web design for Athena Faculty Committee."
+  "synopsis": "Designs for the Athena Faculty Committee.",
+  "image": "assets/projects/design/athena-faculty-committee/cover.png",
+  "additionalImages": [{
+      "src": "assets/projects/design/athena-faculty-committee/gld-banner1.jpg",
+      "caption": "Green Light District: faculty event banner"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/gld-banner2.jpg",
+      "caption": "Green Light District: faculty event banner painting"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/gld-ticketorder.jpg",
+      "caption": "Green Light District: faculty event ticket ordering poster"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/gld-ticket.jpg",
+      "caption": "Green Light District: faculty event ticket"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/dramafeste-poster.jpg",
+      "caption": "Green Line: Dramafeste poster"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/dramafeste-wallpaper.jpg",
+      "caption": "Green Line: Dramafeste wallpaper"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/dramafeste-booklet.jpg",
+      "caption": "Green Line: Dramafeste event booklet"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/moch1.jpg",
+      "caption": "MOCH: Hwa Chong's Own Magazine"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/moch2.jpg",
+      "caption": "MOCH: Hwa Chong's Own Magazine"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/orientation-booklet1.jpg",
+      "caption": "New student orientation booklet"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/orientation-booklet2.jpg",
+      "caption": "New student orientation booklet"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/orientation-wallpaper.jpg",
+      "caption": "New student orientation wallpaper"
+    }, {
+      "src": "assets/projects/design/athena-faculty-committee/orientation-poster.jpg",
+      "caption": "New student orientation poster"
+    }
+  ]
 }, {
   "id": "glints",
   "type": "design",
   "title": "Glints",
-  "synopsis": "Design work done at Glints, a Series-A funded startup."
+  "synopsis": "Design work done at Glints, a Series-A funded startup.",
+  "image": "assets/projects/design/glints/cover.png"
 }, {
   "id": "black-friday",
   "type": "game",
   "title": "Black Friday",
-  "synopsis": "A crazy multiplayer zombie supermarket game for the HTC Vive."
-}, {
-  "id": "keyboard-vs-mouse",
-  "type": "game",
-  "title": "Keyboard vs Mouse",
-  "synopsis": "A two-player game pitting the keyboard against the mouse."
+  "synopsis": "A crazy multiplayer zombie supermarket game for the HTC Vive.",
+  "youtube": "8U4bL2Mk2uo"
 }, {
   "id": "cat-and-mouse",
   "type": "game",
   "title": "Cat and Mouse",
-  "synopsis": "A four-player game for the Jam-O-Drum platform."
+  "synopsis": "A four-player game for the Jam-O-Drum platform.",
+  "youtube": "bX81ZJKoPZw"
 }, {
   "id": "missed-connection",
   "type": "film",
