@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import ReactMarkdown from 'react-markdown';
+import Lightbox from 'react-images';
 import axios from 'axios';
 
 import projects from '../public/projects.json';
@@ -10,7 +11,11 @@ class ProjectPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      project: null
+      project: null,
+      lightbox: {
+        currentImage: 0,
+        isOpen: false
+      }
     };
   }
 
@@ -36,6 +41,48 @@ class ProjectPage extends Component {
 
     // Set the project information.
     this.setState({ ...this.state, project });
+  }
+
+  onAdditionalImageClicked(idx, e) {
+    e.preventDefault();
+    this.setState({
+      ...this.state,
+      lightbox: {
+        ...this.state.lightbox,
+        currentImage: idx,
+        isOpen: true
+      }
+    });
+  }
+
+  onLightboxClickPrev() {
+    this.setState({
+      ...this.state,
+      lightbox: {
+        ...this.state.lightbox,
+        currentImage: this.state.lightbox.currentImage - 1
+      }
+    });
+  }
+
+  onLightboxClickNext() {
+    this.setState({
+      ...this.state,
+      lightbox: {
+        ...this.state.lightbox,
+        currentImage: this.state.lightbox.currentImage + 1
+      }
+    });
+  }
+
+  onLightboxClose() {
+    this.setState({
+      ...this.state,
+      lightbox: {
+        ...this.state.lightbox,
+        isOpen: false
+      }
+    });
   }
 
   render() {
@@ -66,6 +113,23 @@ class ProjectPage extends Component {
           </div>
           <div className="container" styleName="description">
             <ReactMarkdown source={this.state.project.description} />
+            <If condition={this.state.project.additionalImages}>
+              <h1>Additional Images</h1>
+              <For each="item" index="idx" of={this.state.project.additionalImages}>
+                <a onClick={this.onAdditionalImageClicked.bind(this, idx)}
+                  href={item.src} target="_blank">
+                  <img key={item.src} styleName="additionalImage"
+                    src={item.src} alt={item.caption} />
+                </a>
+              </For>
+              <Lightbox
+                images={this.state.project.additionalImages}
+                isOpen={this.state.lightbox.isOpen}
+                currentImage={this.state.lightbox.currentImage}
+                onClickPrev={this.onLightboxClickPrev.bind(this)}
+                onClickNext={this.onLightboxClickNext.bind(this)}
+                onClose={this.onLightboxClose.bind(this)} />
+            </If>
           </div>
         </div>
       );
