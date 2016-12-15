@@ -14,6 +14,7 @@
   min-height: 100vh;
   background: $text-color;
   color: $body-bg;
+  z-index: $zindex-navbar;
 }
 
 .header {

@@ -41,7 +41,8 @@
   "id": "3dgol",
   "type": "code",
   "title": "3D Game of Life",
-  "synopsis": "3D Game of Life implementation in CUDA."
+  "synopsis": "3D Game of Life implementation in CUDA.",
+  "github": "yjwong/3dgol"
 }, {
   "id": "comp-club",
   "type": "design",
@@ -81,12 +82,14 @@
   "id": "missed-connection",
   "type": "film",
   "title": "Missed Connection",
-  "synopsis": "A short 360 degree film of unexpected romance at the library."
+  "synopsis": "A short 360 degree film of unexpected romance at the library.",
+  "youtube": "Lz3lMef96ww"
 }, {
   "id": "the-chain",
   "type": "film",
   "title": "The Chain",
-  "synopsis": "A music video for Ingrid Michaelson's The Chain."
+  "synopsis": "A music video for Ingrid Michaelson's The Chain.",
+  "youtube": "9C_8bf-aYXA"
 }, {
   "id": "recycled-laptop",
   "type": "other",

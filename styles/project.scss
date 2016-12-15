@@ -19,7 +19,8 @@
   color: $body-bg;
   padding-bottom: 30px;
 
-  &.withImage {
+  &.withImage,
+  &.withYouTube {
     padding-top: 40px;
   }
 
@@ -30,6 +31,21 @@
   img {
     max-width: 80%;
     box-shadow: 0 0 20px rgba($gray-dark, 0.5);
+  }
+
+  .youtubeWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    z-index: 0;
+  }
+
+  .youtubeWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .titleAndSubtitle {
@@ -57,7 +73,7 @@
 
   .additionalImage {
     object-fit: cover;
-    height: 64px;
-    width: 64px;
+    height: 128px;
+    width: 128px;
   }
 }

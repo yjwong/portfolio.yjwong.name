@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import ReactMarkdown from 'react-markdown';
 import Lightbox from 'react-images';
+import YouTube from 'react-youtube';
 import classNames from 'classnames';
 import axios from 'axios';
 
@@ -92,12 +93,20 @@ class ProjectPage extends Component {
     } else {
       return (
         <div styleName="container">
-          <div className={classNames(styles.masthead, { [styles.withImage]: this.state.project.image })}>
+          <div className={classNames(styles.masthead, {
+              [styles.withImage]: this.state.project.image,
+              [styles.withYouTube]: this.state.project.youtube
+            })}>
             <div className="container">
               <If condition={this.state.project.image}>
                 <a href={this.state.project.image} target="_blank">
                   <img src={this.state.project.image} alt={`${this.state.project.title} screenshot`} />
                 </a>
+              </If>
+              <If condition={this.state.project.youtube}>
+                <div styleName="youtubeWrapper">
+                  <YouTube videoId={this.state.project.youtube} />
+                </div>
               </If>
             </div>
             <div styleName="titleAndSubtitle">
