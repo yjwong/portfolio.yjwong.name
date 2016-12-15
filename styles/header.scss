@@ -15,3 +15,14 @@
     color: $text-color;
   }
 }
+
+.contactButton {
+  display: none;
+  flex: 0 0 auto;
+}
+
+@media (min-width: $screen-sm-min) {
+  .contactButton {
+    display: block;
+  }
+}

@@ -78,6 +78,9 @@ class Menu extends Component {
                 <h3 key="others"><Link to="/others" onClick={this.onMenuItemClicked.bind(this)}>Others</Link></h3>
                 {this.getListForProjectType('other')}
                 <h3 key="contact"><Link to="/contact" onClick={this.onMenuItemClicked.bind(this)}>Contact</Link></h3>
+                <ul>
+                  <li><a href="https://yjwong.name/misc/Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
               </ReactCSSTransitionGroup>
             </div>
           </div>

@@ -12,6 +12,9 @@ class Header extends Component {
         <h1 styleName="title">
           <Link to="/">Yong Jie's <strong>Portfolio</strong></Link>
         </h1>
+        <Link to="/contact" styleName="contactButton" className="btn btn-my-default btn-sm">
+          Contact Me
+        </Link>
         <Menu></Menu>
       </div>
     );

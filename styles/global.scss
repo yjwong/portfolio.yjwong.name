@@ -16,6 +16,20 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
   padding: 8px 24px;
 }
 
+.btn-my-default.btn-sm,
+.btn-my-default-inverted.btn-sm {
+  padding: 5px 10px;
+  font-size: $font-size-small;
+}
+
+a.btn-my-default:link,
+a.btn-my-default:active,
+a.btn-my-default:visited,
+.btn-my-default {
+  border-color: $text-color;
+  color: $text-color;
+}
+
 a.btn-my-default-inverted:link,
 a.btn-my-default-inverted:active,
 a.btn-my-default-inverted:visited,

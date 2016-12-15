@@ -7,7 +7,7 @@ import Header from '../components/header';
 class IndexPage extends Component {
   render() {
     return (
-      <div styleName="container">
+      <div>
         <div className="container">
           <Header></Header>
         </div>
