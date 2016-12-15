@@ -77,7 +77,7 @@ class Menu extends Component {
                 {this.getListForProjectType('film')}
                 <h3 key="others"><Link to="/projects/others" onClick={this.onMenuItemClicked.bind(this)}>Others</Link></h3>
                 {this.getListForProjectType('other')}
-                <h3 key="contact"><Link to="/contact" onClick={this.onMenuItemClicked.bind(this)}>Contact</Link></h3>
+                <h3 key="contact"><a href="https://yjwong.name" onClick={this.onMenuItemClicked.bind(this)}>Contact</a></h3>
                 <ul>
                   <li><a href="https://yjwong.name/misc/Resume.pdf" target="_blank">Resume</a></li>
                 </ul>
