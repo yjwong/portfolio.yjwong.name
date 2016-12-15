@@ -67,15 +67,15 @@ class Menu extends Component {
                   <li><Link to="/about/me" onClick={this.onMenuItemClicked.bind(this)}>Me</Link></li>
                   <li><Link to="/about/portfolio" onClick={this.onMenuItemClicked.bind(this)}>This Portfolio</Link></li>
                 </ul>
-                <h3 key="code"><Link to="/code" onClick={this.onMenuItemClicked.bind(this)}>Code</Link></h3>
+                <h3 key="code"><Link to="/projects/code" onClick={this.onMenuItemClicked.bind(this)}>Code</Link></h3>
                 {this.getListForProjectType('code')}
-                <h3 key="design"><Link to="/design" onClick={this.onMenuItemClicked.bind(this)}>Design</Link></h3>
+                <h3 key="design"><Link to="/projects/design" onClick={this.onMenuItemClicked.bind(this)}>Design</Link></h3>
                 {this.getListForProjectType('design')}
-                <h3 key="games"><Link to="/games" onClick={this.onMenuItemClicked.bind(this)}>Games</Link></h3>
+                <h3 key="games"><Link to="/projects/games" onClick={this.onMenuItemClicked.bind(this)}>Games</Link></h3>
                 {this.getListForProjectType('game')}
-                <h3 key="film"><Link to="/film" onClick={this.onMenuItemClicked.bind(this)}>Film</Link></h3>
+                <h3 key="film"><Link to="/projects/film" onClick={this.onMenuItemClicked.bind(this)}>Film</Link></h3>
                 {this.getListForProjectType('film')}
-                <h3 key="others"><Link to="/others" onClick={this.onMenuItemClicked.bind(this)}>Others</Link></h3>
+                <h3 key="others"><Link to="/projects/others" onClick={this.onMenuItemClicked.bind(this)}>Others</Link></h3>
                 {this.getListForProjectType('other')}
                 <h3 key="contact"><Link to="/contact" onClick={this.onMenuItemClicked.bind(this)}>Contact</Link></h3>
                 <ul>

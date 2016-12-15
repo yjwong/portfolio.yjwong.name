@@ -9,6 +9,7 @@ import MainPage from './pages/main';
 import IndexPage from './pages/index';
 import AboutMePage from './pages/about-me';
 import AboutPortfolioPage from './pages/about-portfolio';
+import CodePage from './pages/code';
 import ProjectPage from './pages/project';
 import NotFoundPage from './pages/not-found';
 
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Redirect from="about" to="about/me" />
       <Route path="about/me" component={AboutMePage} />
       <Route path="about/portfolio" component={AboutPortfolioPage} />
+      <Route path="projects/code" component={CodePage} />
       <Route path="projects/:type/:id" getComponent={async (nextState) => {
         const matchedProjects = projects.filter(project =>
           project.id === nextState.params.id &&
