@@ -1,0 +1,47 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockquote {
+  border-left: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.work {
+  width: 80vh;
+  display: none;
+  margin: 40px 0;
+  flex-direction: row;
+
+  .category {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  a.category:link,
+  a.category:active,
+  a.category:visited {
+    color: $text-color;
+    font-size: $font-size-h4;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .blockquote {
+    border-left: solid 5px $blockquote-border-color;
+    border-right: solid 5px $blockquote-border-color;
+  }
+
+  .work {
+    display: flex;
+  }
+}
