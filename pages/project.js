@@ -36,7 +36,7 @@ class ProjectPage extends Component {
     );
 
     // Get project description.
-    const response = await axios.get(`projects/${props.params.type}/${props.params.id}.md`);
+    const response = await axios.get(`assets/projects/${props.params.type}/${props.params.id}/description.md`);
     project.description = response.data;
 
     // Set the project information.

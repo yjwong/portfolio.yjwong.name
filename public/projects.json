@@ -3,13 +3,13 @@
   "type": "code",
   "title": "CMU ETC Festival Queuing System",
   "synopsis": "A simple queuing system using Twilio.",
-  "image": "projects/code/etc-festival-queue.png",
+  "image": "assets/projects/code/etc-festival-queue/cover.png",
   "github": "yjwong/etc-festival-queue",
   "additionalImages": [{
-      "src": "projects/code/etc-festival-queue/IMG_20161206_210718.jpg",
+      "src": "assets/projects/code/etc-festival-queue/IMG_20161206_210718.jpg",
       "caption": "Environment of the Forbidden Forest room"
     }, {
-      "src": "projects/code/etc-festival-queue/Screenshot_20161215-003134.png",
+      "src": "assets/projects/code/etc-festival-queue/Screenshot_20161215-003134.png",
       "caption": "Sample text message received by guests"
     }
   ]
