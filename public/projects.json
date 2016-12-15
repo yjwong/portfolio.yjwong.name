@@ -32,27 +32,29 @@
   "synopsis": "PoDoFo (PDF library) bindings for Node.js.",
   "github": "yjwong/node-podofo"
 }, {
-  "id": "node-sane",
-  "type": "code",
-  "title": "Scanner library for Node.js",
-  "synopsis": "SANE (Scanner Access Now Easy) bindings for Node.js.",
-  "github": "yjwong/node-sane"
-}, {
   "id": "3dgol",
   "type": "code",
   "title": "3D Game of Life",
   "synopsis": "3D Game of Life implementation in CUDA.",
-  "github": "yjwong/3dgol"
+  "github": "yjwong/3dgol",
+  "image": "assets/projects/code/3dgol/cover.png"
 }, {
   "id": "comp-club",
   "type": "design",
   "title": "NUS Students' Computing Club",
-  "synopsis": "Web design for NUS Students' Computing Club."
-}, {
-  "id": "mock-pitch-hololisten",
-  "type": "design",
-  "title": "HoloListen Pitch Deck",
-  "synopsis": "Slide deck design for mock pitch presentation at CMU ETC."
+  "synopsis": "Designs for NUS Students' Computing Club.",
+  "image": "assets/projects/design/comp-club/cover.png",
+  "additionalImages": [{
+      "src": "assets/projects/design/comp-club/recruitment-week-poster.jpg",
+      "caption": "Recruitment Week poster"
+    }, {
+      "src": "assets/projects/design/comp-club/club-slide-deck-cover.png",
+      "caption": "Slide deck cover"
+    }, {
+      "src": "assets/projects/design/comp-club/election-poster.jpg",
+      "caption": "Election campaign poster"
+    }
+  ]
 }, {
   "id": "athena-faculty-committee",
   "type": "design",
