@@ -9,23 +9,33 @@ import styles from '../styles/project.scss';
 class ProjectPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { project: null };
+    this.state = {
+      project: null
+    };
   }
 
-  async componentWillMount() {
+  componentWillMount() {
+    this.invalidateProject(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.invalidateProject(nextProps);
+  }
+
+  async invalidateProject(props) {
+    this.setState({ ...this.state, project: null });
+
     const project = projects.find(project =>
-      project.id === this.props.params.id &&
-      project.type === this.props.params.type
+      project.id === props.params.id &&
+      project.type === props.params.type
     );
 
     // Get project description.
-    const response = await axios.get(`projects/${this.props.params.type}/${this.props.params.id}.md`);
+    const response = await axios.get(`projects/${props.params.type}/${props.params.id}.md`);
     project.description = response.data;
 
     // Set the project information.
-    this.setState(Object.assign({}, this.state, {
-      project: project
-    }));
+    this.setState({ ...this.state, project });
   }
 
   render() {
@@ -35,10 +45,28 @@ class ProjectPage extends Component {
       return (
         <div styleName="container">
           <div styleName="masthead">
-            <h1>{this.state.project.title}</h1>
-            <h3 styleName="subtitle">{this.state.project.synopsis}</h3>
+            <div className="container">
+              <If condition={this.state.project.image}>
+                <a href={this.state.project.image} target="_blank">
+                  <img src={this.state.project.image} alt={`${this.state.project.title} screenshot`} />
+                </a>
+              </If>
+            </div>
+            <div styleName="titleAndSubtitle">
+              <h1>{this.state.project.title}</h1>
+              <h3 styleName="subtitle">{this.state.project.synopsis}</h3>
+            </div>
+            <If condition={this.state.project.type === 'code' && this.state.project.github}>
+              <a styleName="callToAction" className="btn btn-my-default-inverted"
+                href={`https://github.com/${this.state.project.github}`}
+                target="_blank">
+                View on GitHub
+              </a>
+            </If>
           </div>
-          <ReactMarkdown source={this.state.project.description} />
+          <div className="container" styleName="description">
+            <ReactMarkdown source={this.state.project.description} />
+          </div>
         </div>
       );
     }

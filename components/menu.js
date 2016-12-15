@@ -64,8 +64,8 @@ class Menu extends Component {
                 transitionAppearTimeout={500}>
                 <h3 key="about"><Link to="/about" onClick={this.onMenuItemClicked.bind(this)}>About</Link></h3>
                 <ul>
-                  <li><Link to="/about/me">Me</Link></li>
-                  <li><Link to="/about/portfolio">This Portfolio</Link></li>
+                  <li><Link to="/about/me" onClick={this.onMenuItemClicked.bind(this)}>Me</Link></li>
+                  <li><Link to="/about/portfolio" onClick={this.onMenuItemClicked.bind(this)}>This Portfolio</Link></li>
                 </ul>
                 <h3 key="code"><Link to="/code" onClick={this.onMenuItemClicked.bind(this)}>Code</Link></h3>
                 {this.getListForProjectType('code')}

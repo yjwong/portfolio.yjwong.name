@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import CSSModules from 'react-css-modules';
 import styles from '../styles/header.scss';
 
@@ -9,7 +10,7 @@ class Header extends Component {
     return (
       <div styleName="header">
         <h1 styleName="title">
-          Yong Jie's <strong>Portfolio</strong>
+          <Link to="/">Yong Jie's <strong>Portfolio</strong></Link>
         </h1>
         <Menu></Menu>
       </div>

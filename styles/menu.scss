@@ -10,10 +10,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  background: #333333;
-  color: #fff;
+  background: $text-color;
+  color: $body-bg;
 }
 
 .header {
@@ -31,9 +31,9 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  background: #333333;
+  background: $text-color;
   border: 0;
-  color: #fff;
+  color: $body-bg;
   font-size: 1em;
 
   > span {
@@ -43,15 +43,15 @@
 
 .closeButton {
   composes: openButton;
-  background: #fff;
-  color: #333333;
+  background: $body-bg;
+  color: $text-color;
 }
 
 .menuItems {
   margin: 24px 0;
 
   a:link, a:active, a:visited {
-    color: #fff;
+    color: $body-bg;
   }
 
   h3 {

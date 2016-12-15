@@ -2,7 +2,6 @@
 
 .container {
   h1, h2, h3, h4, h5, h6 {
-    margin: 6px 0;
     font-weight: bold;
   }
 
@@ -12,12 +11,44 @@
   h4 { font-size: $font-size-h4 * 0.85; }
   h5 { font-size: $font-size-h5 * 0.85; }
   h6 { font-size: $font-size-h6 * 0.85; }
-
-  .subtitle {
-    font-weight: normal;
-  }
 }
 
 .masthead {
+  background: $text-color;
   text-align: center;
+  color: $body-bg;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 6px 0;
+  }
+
+  img {
+    max-width: 80%;
+    box-shadow: 0 0 20px rgba($gray-dark, 0.5);
+  }
+
+  .titleAndSubtitle {
+    margin-top: 30px;
+
+    > .subtitle {
+      font-weight: normal;
+    }
+  }
+  
+  .callToAction {
+    margin-top: 10px;
+  }
+}
+
+.description {
+  margin: 20px auto;
+
+  h1 { font-size: $font-size-h1 * 0.70; }
+  h2 { font-size: $font-size-h2 * 0.70; }
+  h3 { font-size: $font-size-h3 * 0.70; }
+  h4 { font-size: $font-size-h4 * 0.70; }
+  h5 { font-size: $font-size-h5 * 0.70; }
+  h6 { font-size: $font-size-h6 * 0.70; }
 }

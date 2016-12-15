@@ -1,28 +1,34 @@
 [{
   "id": "etc-festival-queue",
   "type": "code",
-  "title": "ETC Festival Queuing System",
-  "synopsis": "A simple queuing system using Twilio."
+  "title": "CMU ETC Festival Queuing System",
+  "synopsis": "A simple queuing system using Twilio.",
+  "image": "projects/code/etc-festival-queue.png",
+  "github": "yjwong/etc-festival-queue"
 }, {
   "id": "nodejs-portable-runtime",
   "type": "code",
   "title": "Node.js Portable Runtime",
-  "synopsis": "A set of scripts that allow running Node.js portably."
+  "synopsis": "A set of scripts that allow running Node.js portably.",
+  "github": "yjwong/nodejs-portable-runtime"
 }, {
   "id": "steam-udp-forwarder",
   "type": "code",
   "title": "Steam UDP Forwarder",
-  "synopsis": "A proxy that allows Steam In-Home Steaming to work across subnets."
+  "synopsis": "A proxy that allows Steam In-Home Steaming to work across subnets.",
+  "github": "yjwong/steam-udp-forwarder"
 }, {
   "id": "node-podofo",
   "type": "code",
   "title": "PDF library for Node.js",
-  "synopsis": "PoDoFo (PDF library) bindings for Node.js."
+  "synopsis": "PoDoFo (PDF library) bindings for Node.js.",
+  "github": "yjwong/node-podofo"
 }, {
   "id": "node-sane",
   "type": "code",
   "title": "Scanner library for Node.js",
-  "synopsis": "SANE (Scanner Access Now Easy) bindings for Node.js."
+  "synopsis": "SANE (Scanner Access Now Easy) bindings for Node.js.",
+  "github": "yjwong/node-sane"
 }, {
   "id": "3dgol",
   "type": "code",

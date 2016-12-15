@@ -1,3 +1,5 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
 .header {
   display: flex;
   width: 100%;
@@ -7,4 +9,9 @@
 .title {
   text-transform: uppercase;
   flex: 1 1 auto;
+  margin: 20px 0;
+
+  a:link, a:active, a:visited {
+    color: $text-color;
+  }
 }

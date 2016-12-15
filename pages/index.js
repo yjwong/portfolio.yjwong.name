@@ -7,8 +7,10 @@ import Header from '../components/header';
 class IndexPage extends Component {
   render() {
     return (
-      <div className="container" styleName="container">
-        <Header></Header>
+      <div styleName="container">
+        <div className="container">
+          <Header></Header>
+        </div>
         {this.props.children}
       </div>
     );

@@ -1,3 +1,24 @@
 $font-family-sans-serif: "Dosis", Arial, sans-serif;
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.btn-my-default,
+.btn-my-default-inverted {
+  border: solid 2px $text-color;
+  border-radius: 6px;
+  padding: 8px 24px;
+}
+
+a.btn-my-default-inverted:link,
+a.btn-my-default-inverted:active,
+a.btn-my-default-inverted:visited,
+.btn-my-default-inverted {
+  border-color: $body-bg;
+  color: $body-bg;
+}
