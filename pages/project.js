@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import ReactMarkdown from 'react-markdown';
 import Lightbox from 'react-images';
+import classNames from 'classnames';
 import axios from 'axios';
 
 import projects from '../public/projects.json';
@@ -91,7 +92,7 @@ class ProjectPage extends Component {
     } else {
       return (
         <div styleName="container">
-          <div styleName="masthead">
+          <div className={classNames(styles.masthead, { [styles.withImage]: this.state.project.image })}>
             <div className="container">
               <If condition={this.state.project.image}>
                 <a href={this.state.project.image} target="_blank">
