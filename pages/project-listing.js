@@ -21,7 +21,7 @@ class ProjectListingPage extends Component {
           <ul styleName="projectList">
             <For each="item" of={projects.filter(project => project.type === this.props.params.type)}>
               <li key={item.id}>
-                <Link to={`projects/code/${item.id}`}>
+                <Link to={`projects/${item.type}/${item.id}`}>
                   {item.title}
                 </Link>
               </li>
